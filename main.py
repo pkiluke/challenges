@@ -10,8 +10,10 @@ from Crypto.Util.number import *
 threshold = 5
 coefficients = [Int(f"coeff{x}") for x in range(threshold)]
 # coeff0 as ASCII converted to long integer, limits of
-coeff0_limits = [bytes_to_long(b"flag{00000000000000000000000000000000}"),
-                 bytes_to_long(b"flag{ffffffffffffffffffffffffffffffff}")]
+coeff0_limits = [
+                 bytes_to_long(b"flag{00000000000000000000000000000000}"),
+                 bytes_to_long(b"flag{ffffffffffffffffffffffffffffffff}")
+]
 
 shares = [
     (2740898742966601935114133183106529,
